@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Special Characters Shortcut",
+  "version": "1.0",
+  "description": "Type special characters ö and ŵ using Right Alt shortcuts.",
+  "permissions": ["activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

@@ -4,9 +4,6 @@
   "version": "1.0.0",
   "description": "Type special characters ö and ŵ using Right Alt shortcuts.",
   "permissions": ["activeTab"],
-  "background": {
-    "service_worker": "background.js"
-  },
   "icons": {
     "128": "assets/icon.png"
   },

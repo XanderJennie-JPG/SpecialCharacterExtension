@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Custom Shortcuts</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 10px; }
+    input, button { margin: 5px 0; }
+  </style>
+</head>
+<body>
+  <h1>Custom Shortcuts</h1>
+  <form id="shortcutForm">
+    <label for="shortcut">Shortcut (Press keys):</label><br>
+    <input type="text" id="shortcut" placeholder="Press keys here"><br>
+    <label for="character">Character:</label><br>
+    <input type="text" id="character" placeholder="e.g., ö"><br>
+    <button type="submit">Add Shortcut</button>
+  </form>
+  <h2>Existing Shortcuts</h2>
+  <ul id="shortcutList"></ul>
+  <script src="popup.js"></script>
+</body>
+</html>

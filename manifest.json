@@ -1,16 +1,27 @@
 {
   "manifest_version": 3,
-  "name": "Special Characters Shortcut",
-  "version": "1.0.0",
-  "description": "Type special characters ö and ŵ using Right Alt shortcuts.",
-  "permissions": ["activeTab"],
-  "icons": {
-    "128": "assets/icon.png"
+  "name": "Custom Special Characters Shortcut",
+  "version": "1.1",
+  "description": "Type custom special characters using user-defined shortcuts.",
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "matches": [
+        "<all_urls>"
+      ],
+      "all_frames": true,
+      "js": [
+        "content.js"
+      ]
     }
-  ]
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "assets/icon.png"
+  }
 }

@@ -1,4 +1,4 @@
-Quick extension that types special characters ŵ and ö you press Right Alt + w or o respectively.
+Quick custom extension for someone that types special characters ŵ and ö you press Right Alt + w or o respectively.
 To install, download to zip and load it into chrome as an unpacked extension.
 
 Official documentation:
